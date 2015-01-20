@@ -14,59 +14,182 @@
         </script> 
         <script src="//use.typekit.net/xqc1wcs.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
-        <script type="text/javascript" src= "assets/js/smoothscroll.js"></script> 
         <script src = "assets/js/script.js"></script>
+        <script src = "assets/js/pace.min.js"></script>
     </head>
     <body>
-       <!-- <div class="nav-logo-wrap">
-            <a href="#top" class="nav-logo">
-                <img src="assets/img/test.png" alt="">
-            </a>
-        </div>
-        <div class="nav-menu-button">
-            <i class="nav-menu-icon"></i>
-        </div>
-        <div class="navbar-container open">
-            Menu Links 
-            <nav class="nav-menu-wrap" style="max-height: 530px;">
-                <ul class="nav-menu-links">
-                    <li>
-                        <a href="#home" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="">About</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#team" class="">Contact</a>
-                    </li>
-                </ul>
+        <nav id = "navbar_container">
+                <div id = "navbar_content" class = "content">
+                    <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
+                        <div id = "navbar_header">
+                            <img id  = "img" src = "assets/img/logo2.png">
+                        </div>
+                    </a>
+                
+                    <div id="button-wrapper">
+                        <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-reveal-id="mobile-menu">
+                            <span class="lines-white"></span>
+                        </button>
+                    </div>
+               
+                    <!--
+                    <div id = "menu">
+                        <div id = "menu_content">
+                            <ul>
+                                <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
+                                    <li>
+                                        Home
+                                    </li>
+                                </a>
+                                <li>
+                                    Work
+                                </li>
+                                <a target = "_blank" onclick= "javascript:document.location.href='blog.html'">
+                                    <li>
+                                        Blog
+                                    </li>
+                                </a>
+                                <li class>
+                                    Contact
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+             -->
+                    <div id = "navbar_right">
+                        <ul id = "navbar_items">
+                            <li class = "navbar_item">
+                                <a href = "html">
+                                    Home
+                                 </a>
+                            </li>
+                            <li class = "navbar_item">
+                                <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
+                                    Work
+                                 </a>
+                            </li>
+                            <li class = "navbar_item">
+                                <a target = "_blank" onclick= "javascript:document.location.href='blog.html'">
+                                    Blog
+                                 </a>
+                            </li>
+                            <li class = "navbar_item">
+                                <a href = "#footer">
+                                    Contact
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div class = "clear">
+                    </div>
+                </div>
             </nav>
-        </div>
-        -->
-        <div id = "wrapper">
-            <div id = "alert">
-                This website is under construction
-            </div>
-            <div id = "footer">
-                <a href = "mailto:hamza.ah@berkeley.edu" target = "_blank">
-                <div class = "info">hamza.ah@berkeley.edu</div>
-                </a>
-            </div>
-            <section id = "landing-container"> 
-                <div class = "table"> 
+            <!--<nav id = "nav">
+                <img id = "nav-icon" src = "assets/img/logo21.png" class = "btn">
+            </nav>-->
+            <div id = "wrapper">
+            <div id = "landing-cover">
+                <div class = "table">
                     <div class = "table-cell">
-                        <div class = "header">
+                        <div id = "name">
                             Hamza Ahmed
                         </div>
-                        <div class = "subheader">
-                            Web Design & Computer Science
+                        <div id = "career">
+                            Computer Science & Web Design
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div id = "page-wrapper">
+                <div class = "section container" id = "bio-section">
+                    <div class = "subtitle">
+                        About
+                    </div>
+                    <div id = "bio">
+                        I'm a first year Computer Science major. After completing a BFA in Graphic and Interactive Design at Tyler School of Art he moved to New York to work with NoFavorite, a web design studio in SoHo. <br>
+                        <div id = "readmore" class = "btn">
+                            Read more
+                        </div>
+                    </div>
+                    <div class = "clear">
+                    </div>
+                </div>
+                <!--
+                <div class = "section container">
+                    <div class = "subtitle" id = "work-title">
+                        Work
+                    </div>
+                    <div class = "card-container">
+                        <div class = "card">
+                        </div>
+                        <div class = "card-desc">
+                            <div class = "card-header">
+                                Web Design DeCal
+                            </div>
+                            <div class = "card-subheader">
+                                Course Instructor
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card-container">
+                        <div class = "card">
+                        </div>
+                        <div class = "card-desc">
+                            <div class = "card-header">
+                                UCBMUN
+                            </div>
+                            <div class = "card-subheader">
+                                UI Developer 
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "card-container">
+                        <div class = "card">
+                        </div>
+                        <div class = "card-desc">
+                            <div class = "card-header">
+                                UC Berkeley
+                            </div>
+                            <div class = "card-subheader">
+                                Student 
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "clear">
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <div id = "footer">
+            <div id = "footer-container">
+                <div class = "subtitle" id = "contact-title">
+                    CONTACT
+                </div>
+                <div id = "contact-text">
+                     I'm a first year Computer Science major. After completing a BFA in Graphic and Interactive Design at Tyler School of Art he moved to New York to work with NoFavorite, a web design studio in SoHo.
+                </div>
+                <a id = "copyright"  href = "mailto:hamza.ah@berkeley.edu" target= "_blank">
+                    hamza.ah@berkeley.edu
+                </a>
+                <br>
+                <a id = "copyright">
+                    Resumé
+                </a>
+                <br>
+                <a id = "copyright">
+                    Berkeley, CA
+                </a>
+                <div id = "social-container">
+                    <i class = "fa fa-instagram social"></i>
+                    <i class = "fa fa-linkedin social"></i>
+                    <i class = "fa fa-twitter social"></i>
+                </div>
+                <div class = "clear">
+                </div>
+            </div>
         </div>
     </body>
 </html>
