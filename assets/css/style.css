@@ -653,3 +653,10 @@ hr {
 .social:hover {
 	color: #22222a;
 }
+
+
+@media (max-width: 480px) {
+	#name {
+		line-height: 1.1;
+	}
+}
