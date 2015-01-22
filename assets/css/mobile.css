@@ -73,18 +73,16 @@ a {
 .menu_open {
 	top: 0 !important;
 }
+
 a:link { 
-	color: inherit;
 	text-decoration: none;
 }
 
-a:active { 
-	color: inherit; 
+a:active {  
 	text-decoration: none;
 }
 
 a:visited {
-	color: inherit; 
 	text-decoration: none;
 }
 
@@ -471,7 +469,7 @@ button span {
 
 #career {
     font-size: 16px;
-    color: #99999a;
+    color: #66666a;
 }
 
 #read-more {
