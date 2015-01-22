@@ -32,6 +32,47 @@ a {
     text-decoration: none;
 }
 
+#menu {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(146, 143, 134, 0.9);
+	left: 0;
+	z-index: 100;
+	top: -100%;
+	-webkit-transition: all .5s ease-out;
+}
+
+#menu_content {
+	display: table;
+	width: 100%;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	height: 100%;
+}
+
+#menu_content ul {
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#menu_content li {
+	text-align: center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+	color: #fff;
+	z-index: 9;
+	list-style: none;
+}
+
+.menu_open {
+	top: 0 !important;
+}
 a:link { 
 	color: inherit;
 	text-decoration: none;
@@ -134,11 +175,12 @@ a:visited {
   	-webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
  	-moz-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
   	transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-	margin-top: 60px;
 }
 
 .section {
-   	padding: 60px;
+   	padding: 20px;
+   	padding-right: 25px;
+   	padding-bottom: 30px;
 }
 
 /* Navbar */
@@ -149,9 +191,13 @@ a:visited {
 	top: 0;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
-	padding: 15px 60px;
-	padding-right: 46px;
+	z-index: 99999;
+	padding: 15px 20px;
+	padding-right: 15px;
+	-webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	-moz-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	-o-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+	transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .navbar-active {
@@ -161,13 +207,17 @@ a:visited {
 }
 
 #navbar-item-container {
-	position: fixed;
 	opacity: 0;
 	visibility: hidden;
 	list-style: none;
-	top: 15px;
-	right: 100px;
-	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: #FDFDFD;
+	z-index: 999;
+	padding-top: 120px;
+	padding-left: 20px;
 	-webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
 	-moz-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
 	-o-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
@@ -175,21 +225,14 @@ a:visited {
 }
 
 .navbar-item {
-	float: left;
-	margin: 0 20px;
-	font-size: 16px;
+	margin: 30px 0;
+	font-size: 32px;
 	line-height: 30px;
 	color: #66666a;
 }
 
-.navbar-item a {
-	border-bottom: 1px solid transparent;
-	border-top: 1px solid transparent;
-}
-
-.navbar-item a:hover {
+.navbar-item a:active {
 	color: #22222a;
-  	border-bottom: 1px solid #dddddf;
 }
 
 #navbar-logo {
@@ -249,7 +292,7 @@ button span {
   -moz-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
   transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
   position: relative;
-  z-index: 999;
+  z-index: 1000;
   user-select: none;
 }
 
@@ -277,7 +320,7 @@ button span {
   border-radius: 0.15rem;
   transition: 0.3s;
   position: relative;
-  z-index: 999;
+  z-index: 1000;
   user-select: none;
   line-height: 63px;
 }
@@ -386,30 +429,28 @@ button span {
 
 .subtitle {
 	color: #333338;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 .text {
-	font-size: 18px;
+	font-size: 16px;
 	max-width: 600px;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 26px;
 	color: #99999a;
 }
 
 .text-button {
 	font-size: 16px;
 	color: #66666a;
-	border-bottom: 1px solid transparent;
 	line-height: 26px !important;
 }
 
-.text-button:hover {
+.text-button:active {
 	color: #22222a;
-  	border-bottom: 1px solid #dddddf;
 }
 
 /* Name Section */
@@ -420,16 +461,16 @@ button span {
 }
 
 #name {
-    font-size: 72px;
+    font-size: 36px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #333338;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    line-height: 0.8;
 }
 
 #career {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 16px;
     color: #99999a;
 }
 
@@ -491,9 +532,8 @@ button span {
 	color: #66666a;
 	font-size: 16px;
 	cursor: pointer;
-	border-bottom: 1px solid transparent;
 }
 
-.social:hover {
+.social:active {
 	color: #22222a;
 }
