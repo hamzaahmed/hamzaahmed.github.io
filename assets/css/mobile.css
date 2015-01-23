@@ -27,6 +27,10 @@ ul {
 	list-style: none;
 }
 
+p {
+	margin-bottom: 10px; 
+}
+
 a {
 	cursor: pointer;
     text-decoration: none;
@@ -76,6 +80,7 @@ a {
 
 a:link { 
 	text-decoration: none;
+	color: inherit;
 }
 
 a:active {  
@@ -84,6 +89,7 @@ a:active {
 
 a:visited {
 	text-decoration: none;
+	color: inherit;
 }
 
 .clear {
@@ -227,6 +233,9 @@ a:visited {
 	font-size: 32px;
 	line-height: 30px;
 	color: #66666a;
+}
+
+.navbar-item a {
 }
 
 .navbar-item a:active {
@@ -443,7 +452,6 @@ button span {
 
 .text-button {
 	font-size: 16px;
-	color: #66666a;
 	line-height: 26px !important;
 }
 
@@ -472,9 +480,8 @@ button span {
     color: #66666a;
 }
 
-#read-more {
-	margin-top: 10px;
-	display: inline-block;
+#more-text {
+	display: none;
 }
 
 /* Work Section */
@@ -519,6 +526,7 @@ button span {
 
 #link-container {
 	margin-top: 10px;
+	color: #66666a;
 }
 
 #social-container {
