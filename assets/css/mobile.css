@@ -229,10 +229,6 @@ a:visited {
 	color: #66666a;
 }
 
-.navbar-item a {
-  	border-bottom: 1px solid #dddddf;
-}
-
 .navbar-item a:active {
 	color: #22222a;
 }

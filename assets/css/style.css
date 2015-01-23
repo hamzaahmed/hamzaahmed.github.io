@@ -27,6 +27,10 @@ ul {
 	list-style: none;
 }
 
+p {
+	margin-bottom: 10px;
+}
+
 a {
 	cursor: pointer;
     text-decoration: none;
@@ -138,7 +142,7 @@ a:visited {
 }
 
 .section {
-   	padding: 60px;
+   	padding: 30px 60px;
 }
 
 /* Navbar */
@@ -386,7 +390,7 @@ button span {
 
 .subtitle {
 	color: #333338;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -394,7 +398,7 @@ button span {
 }
 .text {
 	font-size: 18px;
-	max-width: 600px;
+	max-width: 700px;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #99999a;
@@ -433,17 +437,20 @@ button span {
     color: #99999a;
 }
 
-#read-more {
-	margin-top: 10px;
-	display: inline-block;
+#more-text {
+	display: none;
 }
 
 /* Work Section */
 
+#work-section {
+	padding-top: 0;
+}
+
 .card-container {
 	float: left;
 	width: 33.3333%;
-	padding: 0 10px;
+	padding-right: 10px;
 }
 
 .card {
@@ -453,9 +460,9 @@ button span {
 }
 
 .card-desc {
-    padding: 20px;
+    padding: 20px 0;
     background: #fff;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .card-header {
