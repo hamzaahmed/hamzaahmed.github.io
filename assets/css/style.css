@@ -129,6 +129,11 @@ a:visited {
 	opacity: 1 !important;
 }
 
+#home-position {
+	position: absolute;
+	top: 0;
+}
+
 #wrapper {
 	margin: 0 auto;
 	position: relative;
@@ -409,6 +414,7 @@ button span {
 	color: #66666a;
 	border-bottom: 1px solid transparent;
 	line-height: 26px !important;
+	position: relative;
 }
 
 .text-button:hover {
@@ -445,34 +451,125 @@ button span {
 
 #work-section {
 	padding-top: 0;
+	padding: 30px 50px;
+}
+
+.arrow-right {
+	font-size: 22px;
+	color: #66666a;
+}
+
+.arrow-right:hover {
+	color: #22222a;
+}
+
+.section-header {
+    padding-right: 10px;
+    position: relative;
+}
+
+#work-title {
+	padding-left: 10px;
+	float: left;
+}
+
+#work-arrow {
+    float: right;
+    position: relative;
+}
+
+.overlay {
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
 }
 
 .card-container {
 	float: left;
 	width: 33.3333%;
-	padding-right: 10px;
+	padding: 0 10px;
+	position: relative;
 }
 
 .card {
-	background-color: black;
-	height: 400px;
+	background-color: #161D38;
+	height: 300px;
 	width: 100%;
+	position: relative;
 }
 
 .card-desc {
     padding: 20px 0;
-    background: #fff;
-    /* padding-left: 10px; */
+    width: 100%;
+    color: #333338;
 }
 
 .card-header {
 	font-size: 20px;
-	color: #333338;
 }
 
 .card-subheader {
 	letter-spacing: 0.01em;
-	color: #99999a;
+	color: #66666a;
+}
+
+#ucbmun-logo {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 20px;
+}
+
+#ucb-desc {
+	color: #333338;
+}
+
+#xix {
+	letter-spacing: 0.6em;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 5px;
+	margin-left: 0.6em;
+	/* display: inline-block; */
+}
+
+#ucb-card {
+	background-color: #ef5f23;
+}
+
+#berkeley-card {
+	background-color: #b2d03b;
+}
+
+#ucb-logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#wdd-logo {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Minion Pro;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 20px;
+}
+
+#wdd-card {
+	background-color: #54a5c2;
+}
+
+#wdd-link {
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 1px;
 }
 
 /* Footer Section */
@@ -482,7 +579,6 @@ button span {
 	font-size: 24px;
 	width: 100%;
 	padding-bottom: 120px;
-	padding-top: 0;
 }
 
 #link-container {
