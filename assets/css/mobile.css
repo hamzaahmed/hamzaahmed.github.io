@@ -488,13 +488,12 @@ button span {
 
 .card-container {
 	float: left;
-	width: 33.3333%;
+	width: 50%;
 	padding: 0 10px;
 }
 
 .card {
-	background-color: black;
-	height: 400px;
+	/* height: 400px; */
 	width: 100%;
 }
 
@@ -505,13 +504,47 @@ button span {
 }
 
 .card-header {
-	font-size: 20px;
+	font-size: 16px;
 	color: #333338;
 }
 
 .card-subheader {
 	letter-spacing: 0.01em;
 	color: #99999a;
+	font-size: 12px;
+}
+
+#ucb-card {
+	background-color: #ef5f23;
+}
+
+#berkeley-card {
+	background-color: #b2d03b;
+}
+
+#wdd-card {
+	background-color: #54a5c2;
+}
+
+
+#work-arrow {
+    float: right;
+    position: relative;
+    padding-right: 10px;
+}
+
+#work-title {
+	padding-left: 10px;
+	float: left;
+}
+
+#work-section {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.fa {
+    margin-right: 0;
 }
 
 /* Footer Section */

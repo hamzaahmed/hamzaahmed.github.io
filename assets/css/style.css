@@ -478,12 +478,23 @@ button span {
     position: relative;
 }
 
+.overlay:hover {
+	opacity: 1;
+}
+
+
+.fa {
+    margin-right: 0;
+}
+
 .overlay {
 
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.2);
 }
 
 .card-container {
@@ -545,6 +556,10 @@ button span {
 	background-color: #b2d03b;
 }
 
+#wdd-card {
+	background-color: #54a5c2;
+}
+
 #ucb-logo {
 	display: block;
 	margin: 0 auto;
@@ -558,10 +573,6 @@ button span {
     letter-spacing: -0.02em;
     color: #fff;
     padding: 20px;
-}
-
-#wdd-card {
-	background-color: #54a5c2;
 }
 
 #wdd-link {
