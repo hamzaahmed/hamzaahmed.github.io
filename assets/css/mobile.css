@@ -501,6 +501,7 @@ button span {
     padding: 20px;
     background: #fff;
     padding-left: 10px;
+    display: none;
 }
 
 .card-header {
