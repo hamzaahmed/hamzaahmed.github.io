@@ -455,6 +455,10 @@ button span {
 	padding: 30px 50px;
 }
 
+.work-img {
+	display: block;
+}
+
 .arrow-right {
 	font-size: 22px;
 	color: #66666a;
@@ -507,7 +511,6 @@ button span {
 
 .card {
 	background-color: #161D38;
-	height: 300px;
 	width: 100%;
 	position: relative;
 }
