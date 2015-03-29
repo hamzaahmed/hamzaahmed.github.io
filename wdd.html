@@ -6,7 +6,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> 
+        <link rel='stylesheet' media='screen and (min-width: 620px)' href='assets/css/style.css' />      
         <link rel='stylesheet' media='screen and (min-width: 620px)' href='assets/css/workpages.css' />
         <link rel='stylesheet' media='screen and (max-width: 620px)' href='assets/css/mobile.css' />
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
@@ -19,92 +20,165 @@
         <script src = "assets/js/pace.min.js"></script>
     </head>
     <body>
-        <div id = "navbar-item-container">
-            <ul>
-                <li class = "navbar-item">
-                    <a href = "html">
-                        Home
-                    </a>
-                </li>
-                <li class = "navbar-item">
-                    <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
-                        Work
-                    </a>
-                </li>
-                <li class = "navbar-item">
-                    <a target = "_blank" onclick= "javascript:document.location.href='blog.html'">
-                        Blog
-                    </a>
-                </li>
-                <li class = "navbar-item">
-                    <a href = "#footer">
-                        Contact
-                    </a>
-                </li>
-                <div class = "clear">
+       <nav class = "nav-container">
+            <div class = "nav-frame clear">
+                <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
+                    <img class = "nav-logo btn" src = "assets/img/logo2.png">
+                </a>
+                <div class = "btn-container">
+                      <button type = "button" role = "button" aria-label = "Toggle Navigation" class = "lines-btn x transition" data-reveal-id = "mobile-menu">
+                        <span class = "lines-white"></span>
+                    </button>
+                    <div class = "clear">
+                    </div>
                 </div>
-            </ul>
-        </div>
-        <nav class = "navbar-container">
-            <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
-                <img id = "navbar-logo" class = "btn" src = "assets/img/logo2.png">
-            </a>
-            <div id = "button-container">
-                <button type = "button" role = "button" aria-label = "Toggle Navigation" class = "lines-button x" data-reveal-id = "mobile-menu">
-                    <span class = "lines-white"></span>
-                </button>
-                <div class = "clear">
+                <div class = "nav-item-container transition clear">
+                    <ul>
+                        <li class = "nav-item">
+                            <a target = "_blank" onclick= "javascript:document.location.href='index.html'" class = "text-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a target = "_blank" onclick= "javascript:document.location.href='work.html'" class = "text-link">
+                                Work
+                            </a>
+                        </li>
+                        <!--
+                        <li class = "nav-item">
+                            <a target = "_blank" onclick= "javascript:document.location.href='blog.html'">
+                                Blog
+                            </a>
+                        </li>
+                        -->
+                        <li class = "nav-item">
+                            <a href = "#footer-section" class = "text-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    
         </nav>
-        <div id = "wrapper">
-            <div id = "header-section" class = "section">
-                <div id = "name-section">
-                    <div id = "name">
+        <div class = "scroll-top">
+        </div>
+        <div class = "wrapper transition">
+            <div id = "name-section" class = "section">
+                <div class = "text-frame">
+                    <div class = "lg-header">
                         Web Design DeCal
                     </div>
-                    <div id = "career">
+                    <div class = "sm-header">
                         Teaching web design to UC Berkeley students
                     </div>
                 </div>
-                <div id = "bio-section">
-                    <div class = "text">
-                        Web Design DeCal, affectionately nicknamed "WDD", is the most popular student-taught class at UC Berkeley. We offer the most beginner-friendly entry point into web development, providing support along the way. I joined as an instructor for WDD in Fall 2014, when we received a whopping 905 applicants for the course, where we could only accept 100. My vision is that we would be the standard for learning web design for anyone with an internet connection.
-                        <!--<p style = "display: none;">I began teaching this class because of the high barrier to entry that I've experienced myself when it comes to learning web design. Most web design curriculums only focus on teaching the skillset - HTML, CS, and JS - and don't really teach people how to use them to build a beautiful website.</p>
-                        <p class = "text">At the same time, I found UC Berkeley's design curriculum severely lacking, and there was a need for an introductory, practical programming class that teaches both design and programming for non-programmers. That's how I started teaching Web Design DeCal, a class for anyone who wants to create a beautiful website.</p>-->
+            </div>
+            <div class = "section">
+                <div class = "text-frame">
+                    <div class = "body-text">
+                        The Web Design DeCal, more commonly known as “WDD”, is the most popular student-run course at UC Berkeley. The course is designed to introduce both experienced and first-time programmers to the realm of web development. I was only a student of WDD in Spring 2014, and now, I am glad to be a co-instructor for the design section. You can read more about WDD at <a target = "_blank" href = "http://www.wdd.io" class = "text-link">wdd.io</a>.
                     </div>
-                </div>
-                <div class = "clear">
                 </div>
             </div>
             <div class = "section">
-                <div id = "name-section">
-                    <div class = "caption">
-                        Live filming of our webcasts
+                <div class = "text-frame clear">
+                    <div class = "full-img-container">
+                        <img src = "assets/img/team.jpg" class = "full-img img_scaled_wh">
                     </div>
-                    <div class = "subcaption">
-                        All lectures can be found at <a href = "http://live.wdd.io" target = "_blank">live.wdd.io</a>
+                    <div class = "caption-container">
+                        <div class = "caption">
+                              The team
+                        </div>
                     </div>
-                </div>
-                <div id = "bio-section">
-                    <img src = "assets/img/webcast.jpg" id = "webcast-img" class = "img_scaled_wh">
-                </div>
-                <div class = "clear">
                 </div>
             </div>
-             <div id = "footer-section" class = "section">
-                <div id = "footer-container">
-                    <div class = "subtitle">
-                        PROJECTS
-                    </div>
-                    <div id = "arrow-container">
-                        <i class = "fa fa-long-arrow-left arrow-right btn"></i>
-                        <i class = "fa fa-th-large  arrow-right btn"></i>
-                        <i class = "fa fa-long-arrow-right arrow-right btn"></i>
-                    </div>
 
-                        <div id = "social-container">
+            <div class = "section">
+                <div class = "text-frame clear">
+                    <div class = "full-img-container">
+                        <img src = "assets/img/webcast.jpg" class = "full-img img_scaled_wh">
+                    </div>
+                    <div class = "caption-container">
+                        <div class = "caption">
+                              Live filming of our webcasts. All lectures can be found at <a href = "http://live.wdd.io" target = "_blank" class = "text-link">live.wdd.io</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "section">
+                <div class = "text-frame">
+                    <div class = "body-text">
+                        <div class = "text-section-header">
+                            What I've Learned So Far
+                        </div>
+                            As the design co-instructor of WDD, my main role is to prepare lecture slides on a biweekly basis. I've learned that teaching design theories and philosophies such as the "pillars of emphasis" and skeumorphism can be extremely challenging. Its not easy to explain when to use serif vs. sans serif fonts, or how to strike the perfect balance of spacing such that it makes your website look simple, but not barren. Regardless, I try to do my best as a lecturer, and I definitely feel a lot more confident than when I first started teaching. I hope to keep improving to make sure WDD remains the best DeCal of all time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "section">
+                <div class = "box-frame">
+                    <div class = "text-section-header text-box-section-header">
+                    WDD | STATS
+                    </div>
+                    <div class = "box-frame clear">
+                        <div class = "card-container">
+                            <div class = "card-desc2">
+                                <div class = "card-header">
+                                    2000+
+                                </div>
+                                <div class = "card-subheader">
+                                    Applications Received
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "card-container">
+                            <div class = "card-desc2">
+                                <div class = "card-header">
+                                    4.9/5
+                                </div>
+                                <div class = "card-subheader">
+                                    Avg. Satisfaction Rating
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "card-container">
+                            <div class = "card-desc2">
+                                <div class = "card-header">
+                                    3 to 7
+                                </div>
+                                <div class = "card-subheader">
+                                    Avg. Increase in Confidence
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "footer-section" class = "section">
+                <div class = "frame">
+                    <!--
+                    <div class = "projects-container clear">
+                        <div class = "section-header" id = "projects-header">
+                            PROJECTS
+                        </div>
+                        <div class = "arrow-nav-container right">
+                            <i class = "fa fa-long-arrow-left arrow-left arrow btn"></i>
+                            <i class = "fa fa-long-arrow-right arrow-right arrow btn"></i>
+                        </div>
+                    </div>
+                    -->
+                    <div class = "link2-container">
+                        <a class = "body-text-btn clear btn" href = "mailto:hamza.ah@berkeley.edu" target= "_blank">
+                            hamza.ah@berkeley.edu
+                        </a>
+                        <a class = "body-text-btn clear btn" href = "assets/img/Hamza-Ahmed-Resume.pdf" target = "_blank">
+                            Resumé
+                        </a>
+                        <a class = "body-text-btn clear btn" href = "https://www.google.com.sa/maps/place/Berkeley,+CA,+USA/data=!4m2!3m1!1s0x808579363a8549d3:0x94ea1595a675e993?sa=X&ei=SoTBVK3gFYjooASv54HgCw&ved=0CB0Q8gEwAA" target = "_blank">
+                            Berkeley, CA
+                        </a>
+                        <div class = "social-container clear">
                             <a href = "http://instagram.com/hamza.ah/" target = "_blank">
                                 <i class = "fa fa-instagram social"></i>
                             </a>
@@ -115,8 +189,6 @@
                                 <i class = "fa fa-twitter social"></i>
                             </a>
                         </div>
-                
-                    <div class = "clear">
                     </div>
                 </div>
             </div>
