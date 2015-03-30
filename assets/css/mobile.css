@@ -142,8 +142,17 @@ a {
 }
 
 .section {
-	padding: 15px 0;
+   	padding: 20px;
+   	padding-right: 25px;
+   	padding-bottom: 30px;
 }
+
+.box-section {
+    padding: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+}
+
 
 
 .frame {
@@ -198,12 +207,6 @@ a {
 	opacity: 1 !important;
 }
 
-.section {
-   	padding: 20px;
-   	padding-right: 25px;
-   	padding-bottom: 30px;
-}
-
 /* Navbar */
 
 .nav-container {
@@ -251,7 +254,6 @@ a {
 	-o-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
 	transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-
 
 .nav-item {
 	margin: 30px 0;
@@ -459,10 +461,6 @@ button span {
 
 /* Common Classes */
 
-.text-box-section-header {
-	padding-left: 10px;
-}
-
 .text-link {
 	color: #66666a;
 }
@@ -480,7 +478,7 @@ button span {
     letter-spacing: 1px;
     color: #333338;
     margin-bottom: 10px;
-    line-height: 0.8;
+    line-height: 40px;
 }
 
 .sm-header {
@@ -490,11 +488,15 @@ button span {
 
 .section-header, .text-section-header {
 	color: #333338;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+}
+
+.text-box-section-header {
+	padding-left: 10px;
 }
 
 .body-text {
@@ -563,28 +565,30 @@ button span {
     padding: 20px;
     background: #fff;
     padding-left: 0;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .card-desc2 {
-	padding: 20px;
+	padding: 10px 0;
     width: 100%;
     color: #333338;
-    text-align: center;
+    
+	text-align: center;
 	border-bottom: 1px solid rgba(0,0,0,0.10);
 	line-height: 1.5;
 }
 
 .card-header {
-	font-size: 12px;
+	font-size: 16px;
 	color: #333338;
+	line-height: 2;
 }
 
 .card-subheader {
 	letter-spacing: 0.01em;
 	color: #99999a;
-	font-size: 10px;
-	line-height: 1;
+	font-size: 12px;
+	line-height: 1.2;
 }
 
 #ucb-card {
@@ -641,8 +645,9 @@ button span {
 /* Workpages */
 
 .caption-container {
-	font-size: 14px;
+	font-size: 12px;
 	color: #99999a;
+	line-height: 16px;
 }
 
 .caption-container:before {
@@ -651,7 +656,7 @@ button span {
 	display: block;
 	content: "";
 	border-top: 1px solid rgba(0,0,0,0.15);
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 	margin-top: 12px;
 }
 
