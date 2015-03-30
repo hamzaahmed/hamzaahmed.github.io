@@ -22,9 +22,11 @@ $(document).ready(function() {
 	$('.lines-btn').click(function() {
 		if ($(this).hasClass('close')) {
 			$(this).removeClass('close');
+			$('.btn-container').removeClass('btn-active');
 			$('.nav-item-container').removeClass('nav-active');
 		} else {
 			$(this).addClass('close');
+			$('.btn-container').addClass('btn-active');
 			$('.nav-item-container').addClass('nav-active');
 		}
 	});
@@ -32,5 +34,6 @@ $(document).ready(function() {
 	$('.nav-item a').click(function() {
 		$('.lines-btn').removeClass('close');
 		$('.nav-item-container').removeClass('nav-active');
+		$('.btn-container').removeClass('btn-active');
 	});
  });
