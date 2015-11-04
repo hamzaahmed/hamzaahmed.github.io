@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$('.nav-container').addClass('loaded');
 	}, 300);
 
-	$('.body-text-btn').click(function() {
+	$('.body-text .body-text-btn').click(function() {
 		$(this).text(function(i, text) {
           return text === "Read less" ? "Read more" : "Read less";
       	})
