@@ -7,22 +7,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />       
-        <link rel='stylesheet' media='screen and (min-width: 1110px)' href='assets/css/style.css' />
+        <link rel='stylesheet' href='assets/css/style.css' />
         <link rel='stylesheet' media='screen and (max-width: 1110px)' href='assets/css/mobile.css' />
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script> 
-        <script src="//use.typekit.net/xqc1wcs.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
         <script src = "assets/js/script.js"></script>
         <script src = "assets/js/pace.min.js"></script>
     </head>
     <body>
-        <nav class = "nav-container">
-            <div class = "nav-frame clear">
+        <nav class = "nav-section section">
+            <div class = "frame clear">
                 <a target = "_blank" onclick= "javascript:document.location.href='index.html'">
-                    <img class = "nav-logo btn" src = "assets/img/logo2.png">
+                    <img class = "nav-logo btn" src = "assets/img/logo.png">
                 </a>
                 <div class = "btn-container">
                       <button type = "button" role = "button" aria-label = "Toggle Navigation" class = "lines-btn x transition" data-reveal-id = "mobile-menu">
@@ -43,13 +42,6 @@
                                 Work
                             </a>
                         </li>
-                        <!--
-                        <li class = "nav-item">
-                            <a target = "_blank" onclick= "javascript:document.location.href='blog.html'">
-                                Blog
-                            </a>
-                        </li>
-                        -->
                         <li class = "nav-item">
                             <a href = "#footer-section" class = "text-link">
                                 Contact
@@ -70,7 +62,7 @@
                         Hamza Ahmed
                     </div>
                     <div class = "sm-header">
-                        Computer Science & Web Design
+                        Computer Science & Web Development
                     </div>
                 </div>
             </div>
@@ -80,10 +72,24 @@
                         About
                     </div>
                     <div class = "body-text">
-                        <p>I'm a junior pursuing a Bachelor of Arts degree in Computer Science at UC Berkeley. I've recently picked up a profound interest in web design and web development, so you will often find me coding away in my spare time.</p>
-                        <p class = "body-text-expand">I am an instructor for CS 198 (The Web Design DeCal). This Fall, I will be taking CS 162: Operating Systems and Systems Programming as well as CS 186: Introduction to Database Systems.</p>
+                        <p>
+                            I'm a senior pursuing a B.A. in Computer Science at 
+                            <a href="http://www.berkeley.edu"  target = "_blank" class="text-link">UC Berkeley</a>. I build web apps and teach 
+                            <a href="http://wdd.io"  target = "_blank" class="text-link">CS198: The Web Design DeCal</a>.
+                             I'm currently looking for full-time opportunities.
+                        </p>
+                        <p>
+                            This Fall, I will be taking CS 161: Computer Security as well as EE16A: Information Devices and Systems.
+                        </p>
+                        <div class = "body-text-expand">
+
+                            <p>
+                                In my spare time, I work towards my goal of becoming a competitive powerlifter. I recently competed at my first powerlifting meet and totaled 1295lb @ 205lb. I'm currently training for 
+                                <a href="http://www.teamrohr.com/2016-usa-powerlifting-raw-nationals/USAPL"  target = "_blank" class="text-link">USAPL Raw Nationals</a> in Atlanta, Georgia.
+                            </p>
+                        </div>
                         <a class = "body-text-btn btn">
-                            Read more
+                            read more
                         </a>
                     </div>
                 </div>
@@ -92,6 +98,22 @@
                 <div class = "box-frame clear">
                     <div class = "section-header box-header">
                         Work
+                    </div>
+                    <div class = "card-container">
+                        <a href = "berkeley.html">
+                            <div class = "card btn" id = "berkeley-card">
+                                <div class = "overlay"></div>
+                                <img src = "assets/img/salesforce.png" class = "img_scaled_wh card-img">
+                            </div>
+                        </a>
+                        <div class = "card-desc">
+                            <div class = "card-header">
+                                Salesforce
+                            </div>
+                            <div class = "card-subheader">
+                                Software Engineer Intern
+                            </div>
+                        </div>
                     </div>
                     <div class = "card-container">
                         <a href = "wdd.html">
@@ -125,31 +147,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class = "card-container">
-                        <a href = "berkeley.html">
-                            <div class = "card btn" id = "berkeley-card">
-                                <div class = "overlay"></div>
-                                <img src = "assets/img/berkeleylogo.png" class = "img_scaled_wh card-img">
-                            </div>
-                        </a>
-                        <div class = "card-desc">
-                            <div class = "card-header">
-                                UC Berkeley
-                            </div>
-                            <div class = "card-subheader">
-                                Student
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div id = "footer-section" class = "section">
                 <div class = "frame">
                     <div class = "section-header">
-                        CONTACT
+                        Contact
                     </div>
                     <div class = "body-text">
-                         I'm currently looking for internship opportunities and available to collaborate on projects.
+                        I'm currently looking for full-time opportunities. 
                     </div>
                     <div class = "link-container">
                         <a class = "body-text-btn clear btn" href = "mailto:hamza.ah@berkeley.edu" target= "_blank">
@@ -162,17 +168,14 @@
                             Berkeley, CA
                         </a>
                         <div class = "social-container clear">
-                            <a href = "http://instagram.com/hamza.ah/" target = "_blank">
-                                <i class = "fa fa-instagram social"></i>
-                            </a>
                             <a href = "https://www.linkedin.com/profile/view?id=345992590&trk=nav_responsive_tab_profile_pic" target = "_blank">
                                 <i class = "fa fa-linkedin social"></i>
                             </a>
                             <a href = "http://github.com/hamzaahmed" target = "_blank">
                                 <i class = "fa fa-github social"></i>
                             </a>
-                            <a href = "https://twitter.com/hamzaadilahmed" target = "_blank">
-                                <i class = "fa fa-twitter social"></i>
+                            <a href = "http://instagram.com/hamza.ah/" target = "_blank">
+                                <i class = "fa fa-instagram social"></i>
                             </a>
                         </div>
                     </div>

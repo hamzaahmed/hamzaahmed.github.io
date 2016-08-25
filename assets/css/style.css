@@ -1,12 +1,42 @@
 /* Document Set-up */
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Circular-Light.otf");
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Circular-Book.otf");
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Circular-Medium.otf");
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Circular-Bold.otf");
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Circular-Black.otf");
+}
 
 * {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	box-sizing: border-box;
-	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	font-family: 'Circular';
 	padding: 0;
 	margin: 0;
 }
@@ -24,7 +54,6 @@ body, html {
 	min-height: 100%;
 	font-size: 14px;
 	text-rendering: optimizeLegibility;
-	line-height: 26px;
 	background-color: #FDFDFD;
 	color: black;
 }
@@ -173,11 +202,8 @@ a {
 
 /* Navigation */
 
-.nav-container {
-	width: 100%;
-	padding: 15px 60px;
-	margin-top: 15px;
-	padding-right: 46px;
+.nav-section {
+	padding-top: 60px;
 }
 
 .nav-active {
@@ -196,7 +222,7 @@ a {
 
 .nav-item {
 	float: left;
-	margin: 0 20px;
+	margin: 0 14px;
 	font-size: 16px;
 	line-height: 30px;
 	color: #66666a;
@@ -402,11 +428,9 @@ button span {
 
 .text-section-header, .section-header {
 	color: #333338;
-	font-size: 16px;
+	font-size: 20px;
 	margin-bottom: 10px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: -0.02rem;
 }
 
 .text-box-section-header {
@@ -429,10 +453,10 @@ button span {
 
 .body-text {
 	font-size: 18px;
-	/* max-width: 700px; */
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.5em;
 	color: #99999a;
+	letter-spacing: -0.003em;
 }
 
 .body-text-btn {
@@ -450,22 +474,22 @@ button span {
 /* Name Section */
 
 #name-section {
-	padding-top: 120px;
-	padding-bottom: 45px;
+	padding-top: 80px;
+	/* padding-bottom: 45px; */
 }
 
 .lg-header {
-    font-size: 72px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 48px;
+    font-weight: 500;
     color: #333338;
-    margin-bottom: 30px;
+    letter-spacing: -0.02em;
 }
 
 .sm-header {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
-    color: #99999a;
+    color: #66666a;
+    letter-spacing: -0.01em;
 }
 
 .body-text-expand {
@@ -473,24 +497,6 @@ button span {
 }
 
 /* Work Section */
-
-.arrow {
-	font-size: 22px;
-	color: #66666a;
-}
-
-.arrow-left {
-	margin-right: 15px;
-}
-
-.arrow-right {
-	margin-left: 15px;
-}
-
-.arrow:hover {
-	color: #22222a;
-}
-
 
 .overlay {
 	width: 100%;
@@ -534,7 +540,6 @@ button span {
     width: 100%;
     color: #333338;
     text-align: center;
-	border-bottom: 1px solid rgba(0,0,0,0.10);
 }
 
 .card-header {
@@ -542,8 +547,8 @@ button span {
 }
 
 .card-subheader {
-	letter-spacing: 0.01em;
 	color: #66666a;
+	font-weight: 400;
 }
 
 #ucb-card {
@@ -551,7 +556,7 @@ button span {
 }
 
 #berkeley-card {
-	background-color: #b2d03b;
+	background-color: #16325c;
 }
 
 #wdd-card {
@@ -579,13 +584,44 @@ button span {
 }
 
 .social {
-	margin-right: 20px;
+	margin-right: 14px;
 	color: #66666a;
-	font-size: 16px;
+	font-size: 20px;
 	cursor: pointer;
 	border-bottom: 1px solid transparent;
 }
 
 .social:hover {
 	color: #22222a;
+}
+
+/* Workpages */
+
+.caption-container {
+	width: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 120px;
+	text-align: right;
+	font-size: 14px;
+	color: #99999a;
+}
+
+.caption-container:before {
+	width: 25%;
+	margin-left: 75%;
+	display: block;
+	content: "";
+	border-top: 1px solid rgba(0,0,0,0.15);
+	margin-bottom: 10px;
+}
+
+.full-img-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.full-img-container img {
+	display: block;
 }
